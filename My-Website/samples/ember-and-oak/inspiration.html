@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Room inspiration and styling ideas | Ember & Oak</title>
+<meta name="description" content="Browse styled rooms for dining, living and bedrooms. Get ideas for layouts, colours and furniture from the Ember & Oak team.">
+<meta name="robots" content="noindex, follow">
+<meta property="og:title" content="Room inspiration and styling ideas | Ember & Oak"><meta property="og:description" content="Browse styled rooms for dining, living and bedrooms. Get ideas for layouts, colours and furniture from the Ember & Oak team."><meta property="og:type" content="website"><meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#054c73">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23054c73'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+
+:root{--navy:#054c73;--ink:#333;--muted:#666;--tint:#f2f5ff;--page:#fcfcfc;--gut:clamp(24px,8.33vw,120px);--gut2:clamp(24px,8.9vw,128px)}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Montserrat',system-ui,sans-serif;background:var(--page);color:var(--ink)}
+img{display:block}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1440px;margin:0 auto}
+.crop{position:relative;overflow:hidden}
+.crop>img{position:absolute;max-width:none;object-fit:cover}
+
+/* header */
+header{background:#fff}
+header .wrap{height:122px;display:flex;align-items:center;justify-content:space-between;padding:0 var(--gut);gap:24px;flex-wrap:wrap}
+.logo{font-size:34px;font-weight:700;color:var(--navy)}
+nav{display:flex;gap:68px}
+nav a{font-size:14px;font-weight:600}
+nav a:hover,nav a:focus-visible{color:var(--navy)}
+
+/* hero */
+.hero{position:relative;height:749px;overflow:hidden}
+.hero-bg{position:absolute;inset:0}
+.hero .wrap{position:relative;height:100%;display:flex;align-items:center;justify-content:flex-end;padding-right:clamp(24px,6.25vw,90px)}
+.hero-card{background:#dfe9f4;border-radius:10px;width:min(643px,100%);padding:37px 39px 41px}
+.eyebrow{font-size:16px;font-weight:600;letter-spacing:3px}
+.hero-card h1{font-size:52px;line-height:65px;font-weight:700;color:var(--navy);margin-top:20px}
+.hero-card p{font-size:18px;line-height:39px;font-weight:500;margin-top:17px;max-width:546px}
+.btn{display:inline-block;background:var(--navy);color:#fff;font:700 16px/20px 'Montserrat',sans-serif;text-transform:uppercase;padding:25px 72px;border-radius:50px;border:0;cursor:pointer;white-space:nowrap}
+.hero-card .btn{margin-top:30px}
+.btn:hover{background:#03344f}
+.btn:focus-visible,nav a:focus-visible,input:focus-visible{outline:3px solid #7aa9c7;outline-offset:3px}
+
+/* features */
+.features{background:var(--tint)}
+.features .wrap{display:flex;justify-content:space-between;gap:32px;padding:46px var(--gut)}
+.feat{display:flex;gap:27px;align-items:flex-start}
+.feat h3{font-size:24px;font-weight:600}
+.feat p{font-size:16px;margin-top:6px}
+
+/* section headings */
+.sec-head{text-align:center}
+.sec-head h2{font-size:32px;font-weight:700}
+.sec-head p{font-size:20px;color:var(--muted);margin-top:20px}
+
+/* inspiration */
+.insp-sec{padding:60px 0}
+.insp{display:grid;grid-template-columns:repeat(3,1fr);gap:40px;padding:0 clamp(24px,10.2vw,147px);margin-top:56px;align-items:start}
+.insp .crop{aspect-ratio:355/434}
+.insp .crop:nth-child(odd){margin-top:38px}
+.c1{border-radius:100px 6px 6px 6px}
+.c2{border-radius:12px}
+.c3{border-radius:6px 6px 100px 6px}
+
+/* beautify */
+.beauty{background:var(--tint)}
+.beauty .wrap{display:grid;grid-template-columns:1fr minmax(0,568px);align-items:center;padding:60px clamp(24px,9.4vw,135px) 60px var(--gut);gap:32px}
+.beauty h2{font-size:32px;font-weight:700}
+.beauty p{font-size:20px;line-height:39px;color:var(--muted);margin:26px 0 38px;max-width:470px}
+.beauty .btn{padding:24px 57px}
+.art{position:relative;width:100%;aspect-ratio:568/754}
+.art .circle{position:absolute;left:34.5%;top:25.1%;width:65.5%;height:49.6%}
+.art .photo{position:absolute;left:0;top:0;width:88%;height:100%;border-radius:10px}
+
+/* range */
+.range-sec{padding:60px 0}
+.range{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;padding:0 var(--gut2);margin-top:56px}
+.range .crop{aspect-ratio:381/480;border-radius:10px}
+.range figcaption{text-align:center;font-size:24px;font-weight:600;margin-top:30px}
+hr{border:0;height:1px;background:#d7d6d6}
+
+/* how it works */
+.how{padding:60px 0 190px}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;padding:0 var(--gut2);margin-top:56px}
+.step-img{position:relative}
+.step-img .crop{aspect-ratio:381/400;border-radius:10px}
+.badge{position:absolute;left:50%;bottom:-45px;width:90px;height:90px;transform:translateX(-50%)}
+.badge img{position:absolute;inset:0;width:100%;height:100%}
+.badge img+img{inset:15px;width:60px;height:60px}
+.badge span{position:absolute;inset:0;display:grid;place-items:center;color:#fff;font-size:24px;font-weight:700}
+.step h3{text-align:center;font-size:24px;font-weight:700;margin-top:75px}
+.step p{text-align:center;font-size:18px;line-height:28px;color:var(--muted);margin-top:10px}
+
+/* mailing list */
+.mail{background:var(--tint);padding:60px 24px;text-align:center}
+.mail h2{font-size:32px;font-weight:700}
+.mail p{font-size:20px;line-height:39px;color:var(--muted);max-width:514px;margin:12px auto 0}
+.mail form{display:flex;max-width:486px;margin:43px auto 0;height:70px}
+.mail input{flex:1;min-width:0;border:1px solid var(--navy);border-right:0;border-radius:3px 0 0 3px;background:#fff;padding:0 25px;font:400 16px 'Montserrat',sans-serif;color:#011c42}
+.mail input::placeholder{color:#011c42;opacity:.3}
+.mail form button{width:153px;background:var(--navy);border:1px solid #011c42;border-radius:0 3px 3px 0;color:#fff;font:700 16px 'Montserrat',sans-serif;cursor:pointer}
+.mail form button:hover{background:#03344f}
+
+/* footer */
+footer{background:#03344f;color:#fff;min-height:386px}
+footer .wrap{display:grid;grid-template-columns:423px 1fr;padding:49px var(--gut) 60px}
+footer h4{font-size:24px;font-weight:700}
+footer p{font-size:16px;line-height:35px;margin-top:34px;max-width:400px}
+footer .follow{margin-top:13px}
+.ig-col{padding-top:11px}
+.ig{display:grid;grid-template-columns:repeat(4,175px);gap:21px;margin-top:23px}
+.ig .crop{aspect-ratio:175/185;border-radius:2px}
+
+/* tablet / mobile */
+@media (max-width:1000px){
+  .hero-card h1{font-size:40px;line-height:50px}
+  .feat h3{font-size:20px}
+  .ig{grid-template-columns:repeat(2,minmax(0,175px))}
+}
+@media (max-width:800px){
+  header .wrap{height:auto;padding-block:20px}
+  .logo{font-size:28px}
+  nav{gap:20px;flex-wrap:wrap}
+  .hero{height:auto;min-height:620px}
+  .hero .wrap{align-items:flex-end;padding:24px}
+  .hero-card{padding:28px 24px}
+  .hero-card h1{font-size:32px;line-height:40px}
+  .hero-card p{font-size:16px;line-height:28px}
+  .btn{padding:20px 48px}
+  .features .wrap{flex-direction:column;padding-block:32px}
+  .insp,.range,.steps{grid-template-columns:1fr;max-width:420px;margin-inline:auto}
+  .insp{margin-top:32px}
+  .insp .crop:nth-child(odd){margin-top:0}
+  .range,.steps{margin-top:32px}
+  .step+.step{margin-top:48px}
+  .beauty .wrap{grid-template-columns:1fr}
+  .art{max-width:420px;margin:0 auto}
+  .sec-head h2,.beauty h2,.mail h2{font-size:26px}
+  .sec-head p,.beauty p,.mail p{font-size:16px;line-height:28px}
+  .how{padding-bottom:80px}
+  footer .wrap{grid-template-columns:1fr;gap:32px}
+  footer .follow{margin-top:24px}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+
+.crop>img{position:absolute;inset:0;width:100%;height:100%;max-width:none;object-fit:cover;left:auto;top:auto}
+.skip{position:absolute;left:12px;top:-60px;background:var(--navy);color:#fff;padding:10px 16px;border-radius:8px;z-index:99}.skip:focus{top:10px}
+.menu-btn{display:none;background:none;border:2px solid var(--navy);border-radius:10px;width:46px;height:46px;font-size:22px;color:var(--navy);cursor:pointer}
+nav a[aria-current]{color:var(--navy);border-bottom:2px solid var(--navy)}
+.hero h1{color:var(--navy)}
+.hero-bg img{object-position:center}
+.ico{width:60px;height:50px;color:var(--navy);flex:none}
+.circle-bg{position:absolute;left:34.5%;top:25.1%;width:65.5%;height:49.6%;border-radius:50%;background:#dfe9f4}
+.badge{background:var(--navy);border-radius:50%;box-shadow:0 0 0 8px #fff}.badge span{z-index:1}
+.pagehead{background:var(--tint);text-align:center;padding:64px 24px 56px}.pagehead h1{font-size:clamp(30px,5vw,46px);color:var(--navy)}.pagehead p{color:var(--muted);font-size:18px;margin-top:14px}
+.shop{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:28px;padding:56px var(--gut) 90px;max-width:1440px;margin:auto}
+.prod{background:#fff;border-radius:10px;overflow:hidden;box-shadow:0 10px 30px -18px rgba(5,76,115,.5)}.prod .crop{aspect-ratio:4/5}.prod div.b{padding:18px 20px 22px}.prod h3{font-size:20px}.prod p{color:var(--muted);font-size:14px;margin:4px 0 10px}.prod .pr{font-weight:700;color:var(--navy);font-size:20px;margin-bottom:14px;display:block}.prod .btn{padding:14px 28px;font-size:14px}
+.chips{display:flex;gap:10px;flex-wrap:wrap;justify-content:center;padding:26px var(--gut) 0}.chip{border:2px solid var(--navy);background:#fff;color:var(--navy);border-radius:50px;padding:10px 22px;font:600 14px 'Montserrat';cursor:pointer}.chip.on{background:var(--navy);color:#fff}
+.cartlink{background:var(--navy);color:#fff!important;border-radius:50px;padding:8px 18px!important;border-bottom:0!important}.cartlink b{background:#fff;color:var(--navy);border-radius:50%;min-width:22px;height:22px;display:inline-grid;place-items:center;font-size:12px;margin-left:6px}
+.co{display:grid;grid-template-columns:1.2fr 1fr;gap:40px;padding:50px var(--gut) 90px;max-width:1440px;margin:auto}.ci{display:grid;grid-template-columns:72px 1fr auto;gap:16px;align-items:center;padding:16px 0;border-bottom:1px solid #dfe5f3}.ci img{width:72px;height:72px;border-radius:8px;object-fit:cover}.ci .q{display:inline-flex;gap:8px;align-items:center;margin-top:6px}.ci .q button{width:30px;height:30px;border-radius:50%;border:1px solid var(--navy);background:#fff;color:var(--navy);cursor:pointer;font-size:16px}.ci .rm{background:none;border:0;color:#a33;cursor:pointer;font-size:13px;margin-top:6px}.tot{display:flex;justify-content:space-between;font-size:20px;font-weight:700;padding:18px 0;color:var(--navy)}.ok{background:#e6f6ea;border:1px solid #9bd3a9;padding:22px;border-radius:10px;text-align:center}.cartpill{position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));background:var(--navy);color:#fff;padding:14px 22px;border-radius:50px;font-weight:700;font-size:14px;box-shadow:0 12px 30px -10px #054c73;z-index:40;text-decoration:none}
+.masonry{columns:3 260px;column-gap:20px;padding:56px var(--gut) 90px;max-width:1440px;margin:auto}.masonry figure{margin:0 0 20px;break-inside:avoid;position:relative;border-radius:10px;overflow:hidden}.masonry img{width:100%;height:auto}.masonry figcaption{position:absolute;left:0;right:0;bottom:0;padding:30px 16px 12px;color:#fff;font-weight:600;background:linear-gradient(transparent,rgba(0,0,0,.65))}
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:48px;padding:56px var(--gut) 90px;max-width:1440px;margin:auto}.contact ul{list-style:none;margin-top:20px}.contact li{padding:14px 0;border-bottom:1px dashed #cfd6e6;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.contact form{background:var(--tint);padding:30px;border-radius:10px;display:grid;gap:14px}.contact label{display:grid;gap:6px;font-weight:600;font-size:14px}.contact input,.contact textarea,.contact select{padding:14px;border:1px solid #b9c6e6;border-radius:6px;font:400 16px 'Montserrat';background:#fff;min-height:48px}.contact textarea{min-height:120px}
+.toast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%);background:#111;color:#fff;padding:12px 18px;border-radius:12px;opacity:0;pointer-events:none;transition:.3s;z-index:90;max-width:92vw}.toast.show{opacity:1}
+@media(max-width:1000px){.co{grid-template-columns:1fr}header .wrap{height:auto;padding-block:16px}.contact{grid-template-columns:1fr}}
+@media(max-width:800px){.menu-btn{display:block}nav{display:none;width:100%;flex-direction:column;gap:0;order:3}nav.open{display:flex}nav a{padding:14px 0;border-top:1px solid #e3e8f4}.mailform{flex-direction:column;height:auto}.mail form{height:auto;flex-direction:column;gap:10px}.mail input{border-right:1px solid var(--navy);border-radius:3px;height:56px}.mail form button{width:100%;border-radius:3px;height:56px}.hero-card .btn,.btn{padding:18px 40px}.beauty .wrap{padding:40px 24px}.ig{grid-template-columns:repeat(2,minmax(0,1fr))!important}footer .wrap{padding-inline:24px}.hero{min-height:560px}.features .wrap{align-items:flex-start}.feat{width:100%}}
+</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FurnitureStore","name":"Ember & Oak","description":"Dining, living and bedroom furniture, delivered free."}</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header><div class="wrap"><a class="logo" href="index.html">Ember & Oak</a><button class="menu-btn" aria-label="Menu" aria-expanded="false" aria-controls="nv">☰</button>
+<nav id="nv" aria-label="Main"><a href="index.html">Home</a><a href="shop.html">Shop</a><a href="inspiration.html" aria-current="page">Inspiration</a><a href="contact.html">Contact</a><a class="cartlink" href="checkout.html">Cart <b id="cc">0</b></a></nav></div></header>
+<main id="main">
+<section class="pagehead"><h1>Room inspiration</h1><p>Real rooms, styled with pieces from our range.</p></section><div class="masonry"><figure><img src="https://images.unsplash.com/photo-1556228453-efd6c1ff04f6?auto=format&fit=crop&q=70&w=700&h=920" data-pool="interior" alt="Sunlit living room" width="700" height="920" loading="lazy" decoding="async"><figcaption>Sunlit living room</figcaption></figure><figure><img src="https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?auto=format&fit=crop&q=70&w=700&h=640" data-pool="interior" alt="Oak dining corner" width="700" height="640" loading="lazy" decoding="async"><figcaption>Oak dining corner</figcaption></figure><figure><img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&q=70&w=700&h=640" data-pool="interior" alt="Quiet bedroom" width="700" height="640" loading="lazy" decoding="async"><figcaption>Quiet bedroom</figcaption></figure><figure><img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&q=70&w=700&h=920" data-pool="interior" alt="Reading nook" width="700" height="920" loading="lazy" decoding="async"><figcaption>Reading nook</figcaption></figure><figure><img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&q=70&w=700&h=640" data-pool="interior" alt="Entryway console" width="700" height="640" loading="lazy" decoding="async"><figcaption>Entryway console</figcaption></figure><figure><img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&q=70&w=700&h=640" data-pool="interior" alt="Home office" width="700" height="640" loading="lazy" decoding="async"><figcaption>Home office</figcaption></figure><figure><img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&q=70&w=700&h=920" data-pool="interior" alt="Kids room" width="700" height="920" loading="lazy" decoding="async"><figcaption>Kids room</figcaption></figure><figure><img src="https://images.unsplash.com/photo-1556228453-efd6c1ff04f6?auto=format&fit=crop&q=70&w=700&h=640" data-pool="interior" alt="Balcony lounge" width="700" height="640" loading="lazy" decoding="async"><figcaption>Balcony lounge</figcaption></figure></div><section class="mail"><h2>Join Our Mailing List</h2><p>Sign up to receive inspiration, product updates, and special offers from our team.</p><form class="mailf"><input type="email" required placeholder="example@gmail.com" aria-label="Email address" autocomplete="email"><button type="submit">Submit</button></form></section>
+</main>
+<footer><div class="wrap"><div><h4>Ember & Oak</h4><p>Furniture made to last, delivered free to your door and styled for the way you live.</p><h4 class="follow">Follow Us</h4><p style="margin-top:10px"><a href="https://instagram.com/emberandoak" target="_blank" rel="noopener">Instagram</a> · <a href="https://wa.me/910000000000" target="_blank" rel="noopener">WhatsApp</a></p></div>
+<div class="ig-col"><h4>Instagram Shop</h4><div class="ig"><div class="crop"><img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&q=70&w=350&h=370" data-pool="interior" alt="Furniture styling from our Instagram" width="350" height="370" loading="lazy" decoding="async"></div><div class="crop"><img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&q=70&w=350&h=370" data-pool="interior" alt="Furniture styling from our Instagram" width="350" height="370" loading="lazy" decoding="async"></div><div class="crop"><img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&q=70&w=350&h=370" data-pool="interior" alt="Furniture styling from our Instagram" width="350" height="370" loading="lazy" decoding="async"></div><div class="crop"><img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&q=70&w=350&h=370" data-pool="interior" alt="Furniture styling from our Instagram" width="350" height="370" loading="lazy" decoding="async"></div></div></div></div>
+<p style="text-align:center;padding:0 24px 24px;font-size:14px;opacity:.85">© 2026 Ember & Oak · Sample website by <a href="../../index.html">Calling Card</a> · <a href="../../samples.html">See all samples</a></p></footer>
+<div class="toast" role="status"></div>
+<script>
+var b=document.querySelector(".menu-btn"),n=document.getElementById("nv");b.addEventListener("click",function(){var o=n.classList.toggle("open");b.setAttribute("aria-expanded",o)});n.addEventListener("click",function(e){if(e.target.closest("a"))n.classList.remove("open")});
+var T=document.querySelector(".toast");function toast(m){T.textContent=m;T.classList.add("show");clearTimeout(toast.t);toast.t=setTimeout(function(){T.classList.remove("show")},3800)}
+function ph(i){if(i.dataset.f)return;i.dataset.f=1;i.src="data:image/svg+xml,"+encodeURIComponent("<svg xmlns='http://www.w3.org/2000/svg' width='600' height='600'><rect width='100%' height='100%' fill='#dfe9f4'/><text x='50%' y='55%' font-size='120' text-anchor='middle' fill='#054c73' fill-opacity='.4'>▭</text></svg>")}
+document.addEventListener("error",function(e){if(e.target.tagName==="IMG"&&e.target.dataset.pool)ph(e.target)},true);document.querySelectorAll("img[data-pool]").forEach(function(i){if(i.complete&&!i.naturalWidth)ph(i)});
+document.querySelectorAll("form.mailf").forEach(function(f){f.addEventListener("submit",function(e){e.preventDefault();toast("Thanks! You are on the list.");f.reset()})});
+document.querySelectorAll("form[data-wa]").forEach(function(f){f.addEventListener("submit",function(e){e.preventDefault();var t=["Enquiry - Ember & Oak"];f.querySelectorAll("input,select,textarea").forEach(function(i){if(i.value&&i.name)t.push(i.name+": "+i.value)});window.open("https://wa.me/910000000000?text="+encodeURIComponent(t.join("\n")),"_blank");toast("WhatsApp is opening with your details.")})});
+var CK="eo_cart",cart=[];try{cart=JSON.parse(localStorage.getItem(CK)||"[]")}catch(e){}
+function save(){try{localStorage.setItem(CK,JSON.stringify(cart))}catch(e){}paint()}
+function cnt(){return cart.reduce(function(a,i){return a+i.q},0)}
+function inr(n){return"₹"+n.toLocaleString("en-IN")}
+function paint(){var c=document.getElementById("cc");if(c)c.textContent=cnt();var p=document.querySelector(".cartpill");if(p)p.textContent="Cart · "+cnt()+" item"+(cnt()==1?"":"s")+" · Checkout"}
+paint();
+document.querySelectorAll("[data-id]").forEach(function(x){x.addEventListener("click",function(){var f=cart.filter(function(i){return i.id===x.dataset.id})[0];if(f)f.q++;else cart.push({id:x.dataset.id,name:x.dataset.name,price:+x.dataset.price,img:x.dataset.img,q:1});save();x.textContent="Added ✓";var m=x.parentNode.querySelector(".more");if(m)m.style.display="inline";toast(x.dataset.name+" added. Tap Cart to check out.")})});
+var cl=document.getElementById("cartlist");
+if(cl){var esc=function(t){return String(t).replace(/[&<>"']/g,function(c){return{"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]})};
+function draw(){var t=0;cl.innerHTML=cart.length?cart.map(function(i,k){t+=i.price*i.q;return'<div class="ci"><img src="'+esc(i.img)+'" alt="" width="72" height="72"><div><b>'+esc(i.name)+'</b><div class="q"><button type="button" data-k="'+k+'" data-d="-1" aria-label="Less">−</button><span>'+i.q+'</span><button type="button" data-k="'+k+'" data-d="1" aria-label="More">+</button></div><button class="rm" type="button" data-k="'+k+'" data-d="x">Remove</button></div><b>'+inr(i.price*i.q)+'</b></div>'}).join(""):'<p>Your cart is empty. <a href="shop.html" style="color:var(--navy);font-weight:700">Browse the shop</a>.</p>';document.getElementById("tot").textContent=inr(t);document.getElementById("pay").disabled=!cart.length;paint()}
+cl.addEventListener("click",function(e){var b=e.target.closest("[data-k]");if(!b)return;var i=cart[+b.dataset.k],d=b.dataset.d;if(d==="x")cart.splice(+b.dataset.k,1);else{i.q+=+d;if(i.q<1)cart.splice(+b.dataset.k,1)}save();draw()});draw();
+document.getElementById("cof").addEventListener("submit",function(e){e.preventDefault();if(!cart.length)return;var f=e.target,t=0,lines=cart.map(function(i){t+=i.price*i.q;return i.q+" x "+i.name+" - "+inr(i.price*i.q)});var no="EO"+Date.now().toString().slice(-6);var msg=["Order "+no+" - Ember & Oak"].concat(lines,["Total: "+inr(t),"Name: "+f.cname.value,"Phone: "+f.cphone.value,"Address: "+f.caddr.value,"Payment: "+f.cpay.value]).join("\n");document.getElementById("cobox").innerHTML='<div class="ok"><h2>Thank you, '+esc(f.cname.value)+'!</h2><p style="margin:10px 0">Your order <b>'+no+'</b> for '+inr(t)+' is placed. We will call you to confirm delivery.</p><a class="btn" target="_blank" rel="noopener" href="https://wa.me/910000000000?text='+encodeURIComponent(msg)+'">Send order on WhatsApp</a></div>';cart=[];save()})}
+var ch=document.querySelectorAll(".chip");ch.forEach(function(x){x.addEventListener("click",function(){ch.forEach(function(y){y.classList.toggle("on",y===x);y.setAttribute("aria-pressed",y===x)});document.querySelectorAll(".prod").forEach(function(p){p.hidden=x.dataset.f!=="all"&&p.dataset.c!==x.dataset.f})})});
+</script>
+</body></html>

@@ -1,0 +1,53 @@
+// Curated, topic-matched photo pools (Unsplash). Swap any ID here to change images site-wide.
+// Every <img> also gets an inline SVG fallback, so a removed photo never shows a broken box or an unrelated picture.
+const U = id => `https://images.unsplash.com/photo-${id}?auto=format&fit=crop&q=70`;
+const P = {
+  wedding: ["1519741497674-611481863552","1511285560929-80b456fea0bc","1465495976277-4387d4b0b4c6","1522673607200-164d1b6ce486"],
+  portrait: ["1494790108377-be9c29b29330","1507003211169-0a1dd7228f2d","1438761681033-6461ffad8d80","1500648767791-00dcc994a43e","1544005313-94ddf0286df2","1472099645785-5658abf4ff4e"],
+  food: ["1517248135467-4c7edcad34c4","1414235077428-338989a2e8c0","1555396273-367ea4eb4db5","1504674900247-0877df9cc836","1540189549336-e6e99c3679fe","1546069901-ba9599a7e63c"],
+  cafe: ["1495474472287-4d71bcdd2085","1481627834876-b7833e8f5570","1512820790803-83ca734da794","1452860606245-08befc0ff44b","1524578271613-d550eacf6090","1544947950-fa07a98d237f"],
+  salon: ["1560066984-138dadb4c035","1522337360788-8b13dee7a37e","1521590832167-7bcbfaa6381f","1604654894610-df63bc536371"],
+  hospital: ["1519494026892-80bbd2d6fd0d","1576091160399-112ba8d25d1d","1551601651-2a8555f1a136","1579684385127-1ef15d508118"],
+  school: ["1503676260728-1c00da094a0b","1523050854058-8df90110c9f1","1509062522246-3755977927d7","1580582932707-520aed937b7b"],
+  fitness: ["1534438327276-14e5300c3a48","1571019613454-1cb2f99b2d8b","1517836357463-d25dfeac3438","1583454110551-21f2fa2afe61"],
+  jewel: ["1605100804763-247f67b3557e","1515562141207-7a88fb7ce338","1573408301185-9146fe634ad0","1535632066927-ab7c9ab60908"],
+  fashion: ["1441986300917-64674bd600d8","1523381210434-271e8be1f52b","1558769132-cb1aea458c5e","1445205170230-053b83016050"],
+  arch: ["1600585154340-be6161a56a0c","1600596542815-ffad4c1539a9","1618221195710-dd6b41faaea6","1486406146926-c627a92ad1ab"],
+  interior: ["1586023492125-27b2c045efd7","1493663284031-b7e3aefcae8e","1556228453-efd6c1ff04f6","1618221195710-dd6b41faaea6","1600210492486-724fe5c67fb0","1505693416388-ac5ce068fe85"],
+  travel: ["1537996194471-e657df975ab4","1528181304800-259b08848526","1506929562872-bb421503ef21","1507525428034-b723cf961d3e","1488646953014-85cb44e25828","1476514525535-07fb3b4ae5f1"],
+  work: ["1497366216548-37526070297c","1522071820081-009f0129c71c","1454165804606-c3d57bc86b40","1460925895917-afdab827c52f"]
+};
+const ICON = { wedding:"♥", portrait:"☺", food:"🍽", cafe:"☕", salon:"✂", hospital:"✚", school:"✎", fitness:"●", jewel:"◆", fashion:"▲", arch:"⌂", interior:"▭", travel:"✈", work:"▣" };
+const hash = s => { let h = 0; for (const c of String(s)) h = (h * 31 + c.charCodeAt(0)) >>> 0; return h; };
+// neutral on-theme fallback (inline SVG, never an unrelated photo)
+function fallback(pool, w, h) {
+  const svg = `<svg xmlns='http://www.w3.org/2000/svg' width='${w}' height='${h}' viewBox='0 0 ${w} ${h}'><defs><linearGradient id='g' x1='0' y1='0' x2='1' y2='1'><stop offset='0' stop-color='%23c9c3b8'/><stop offset='1' stop-color='%238f8a80'/></linearGradient></defs><rect width='100%25' height='100%25' fill='url(%23g)'/><text x='50%25' y='52%25' font-size='${Math.round(Math.min(w, h) / 5)}' text-anchor='middle' fill='white' fill-opacity='.7' font-family='sans-serif'>${encodeURIComponent(ICON[pool] || "▣")}</text></svg>`;
+  return "data:image/svg+xml," + svg.replace(/#/g, "%23");
+}
+
+Object.assign(P, {
+  work: ["1498050108023-c5249f4df085","1461749280684-dccba630e2f6","1555066931-4365d14bab8c","1517694712202-14dd9538aa97","1519389950473-47ba0277781c","1531297484001-80022131f5a1","1517180102446-f3ece451e9d8","1488590528505-98d2b5aba04b","1504384308090-c894fdcc538d","1486312338219-ce68d2c6f44d","1522202176988-66273c2fd55f","1497366216548-37526070297c"],
+  finance: ["1554224155-6726b3ff858f","1460925895917-afdab827c52f","1551288049-bebda4e38f71","1543286386-713bdd548da4","1454165804606-c3d57bc86b40","1556742049-0cfed4f6a45d","1450101499163-c8848c66ca85","1507679799987-c73779587ccf"],
+  school: ["1503676260728-1c00da094a0b","1523050854058-8df90110c9f1","1509062522246-3755977927d7","1580582932707-520aed937b7b","1427504494785-3a9ca7044f45","1544717305-2782549b5136","1588072432836-e10032774350","1497633762265-9d179a990aa6","1456513080510-7bf3a84b82f8","1485546246426-74dc88dec4d9"],
+  food: ["1517248135467-4c7edcad34c4","1414235077428-338989a2e8c0","1555396273-367ea4eb4db5","1504674900247-0877df9cc836","1540189549336-e6e99c3679fe","1546069901-ba9599a7e63c","1565299624946-b28f40a0ae38","1567620905732-2d1ec7ab7445","1512621776951-a57141f2eefd","1476224203421-9ac39bcb3327","1493770348161-369560ae357d","1482049016688-2d3e1b311543"],
+  jewel: ["1605100804763-247f67b3557e","1515562141207-7a88fb7ce338","1573408301185-9146fe634ad0","1535632066927-ab7c9ab60908","1599643478518-a784e5dc4c8f","1611591437281-460bfbe1220a","1602173574767-37ac01994b2a","1617038220319-276d3cfab638"],
+  wedding: ["1519741497674-611481863552","1511285560929-80b456fea0bc","1465495976277-4387d4b0b4c6","1522673607200-164d1b6ce486","1606800052052-a08af7148866","1583939003579-730e3918a45a","1469371670807-013ccf25f16a","1460978812857-470ed1c77af0","1537633552985-df8429e8048b","1529636798458-92182e662485"],
+  cafe: ["1495474472287-4d71bcdd2085","1481627834876-b7833e8f5570","1512820790803-83ca734da794","1452860606245-08befc0ff44b","1524578271613-d550eacf6090","1544947950-fa07a98d237f","1509042239860-f550ce710b93","1442512595331-e72c7d0dc83d","1501339847302-ac426a4a7cbb","1559925393-8be0ec4767c8"],
+  fashion: ["1441986300917-64674bd600d8","1523381210434-271e8be1f52b","1558769132-cb1aea458c5e","1445205170230-053b83016050","1489987707025-afc232f7ea0f","1469334031218-e382a71b716b","1434389677669-e08b4cac3105","1490481651871-ab68de25d43d"]
+});
+// pick sequentially per page: no repeats until the pool is used up
+let used = new Set(), seen = new Map();
+const reset = () => { used = new Set(); seen = new Map(); };
+function photo(pool, kw, lock, w, h) {
+  const list = P[pool] || P.work, key = pool + "|" + kw + "|" + lock;
+  let i = seen.get(key);
+  if (i === undefined) {
+    i = hash(kw + ":" + lock) % list.length; let n = 0;
+    while (used.has(pool + i) && n++ < list.length) i = (i + 1) % list.length;
+    used.add(pool + i); seen.set(key, i);
+  }
+  return U(list[i]) + `&w=${w}&h=${h}`;
+}
+// alternates (same pool) the page can try if a photo fails to load
+const alts = (pool, src) => (P[pool] || P.work).map(id => U(id)).filter(u => !src.startsWith(u)).slice(0, 3).join(" ");
+module.exports = { photo, fallback, P, U, reset, alts };

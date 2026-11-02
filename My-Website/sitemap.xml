@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://www.example.com/</loc><lastmod>2026-10-25</lastmod><priority>1.0</priority></url>
+  <url><loc>https://www.example.com/samples.html</loc><lastmod>2026-10-25</lastmod><priority>0.9</priority></url>
+  <url><loc>https://www.example.com/pricing.html</loc><lastmod>2026-10-25</lastmod><priority>0.9</priority></url>
+  <url><loc>https://www.example.com/blog.html</loc><lastmod>2026-10-25</lastmod><priority>0.8</priority></url>
+  <url><loc>https://www.example.com/blog/why-every-small-business-needs-a-website.html</loc><lastmod>2026-10-25</lastmod><priority>0.7</priority></url>
+  <url><loc>https://www.example.com/blog/how-much-does-a-small-business-website-cost-in-india.html</loc><lastmod>2026-10-25</lastmod><priority>0.7</priority></url>
+  <url><loc>https://www.example.com/blog/google-business-profile-and-local-seo-guide.html</loc><lastmod>2026-10-25</lastmod><priority>0.7</priority></url>
+  <url><loc>https://www.example.com/blog/what-every-small-business-homepage-needs.html</loc><lastmod>2026-10-25</lastmod><priority>0.7</priority></url>
+  <url><loc>https://www.example.com/blog/sell-online-with-a-whatsapp-ordering-website.html</loc><lastmod>2026-10-25</lastmod><priority>0.7</priority></url>
+  <url><loc>https://www.example.com/blog/seo-checklist-for-small-business-websites.html</loc><lastmod>2026-10-25</lastmod><priority>0.7</priority></url>
+  <url><loc>https://www.example.com/blog/website-ideas-for-restaurants-cafes-and-food-businesses.html</loc><lastmod>2026-10-25</lastmod><priority>0.7</priority></url>
+  <url><loc>https://www.example.com/blog/how-clinics-hospitals-and-schools-build-trust-online.html</loc><lastmod>2026-10-25</lastmod><priority>0.7</priority></url>
+  <url><loc>https://www.example.com/blog/how-to-choose-a-domain-name-for-your-business.html</loc><lastmod>2026-10-25</lastmod><priority>0.7</priority></url>
+  <url><loc>https://www.example.com/contact.html</loc><lastmod>2026-10-25</lastmod><priority>0.8</priority></url>
+</urlset>

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Travelo | Flights, hotels and holiday packages in Southeast Asia</title>
+<meta name="description" content="Book holiday packages, hotels and flights across Southeast Asia with Travelo. Flexible dates, secure payment and top destinations from Bali to Kyoto.">
+<meta name="robots" content="noindex, follow">
+<meta property="og:title" content="Travelo | Flights, hotels and holiday packages in Southeast Asia"><meta property="og:description" content="Book holiday packages, hotels and flights across Southeast Asia with Travelo. Flexible dates, secure payment and top destinations from Bali to Kyoto."><meta property="og:type" content="website"><meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#7a2cf0">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%237a2cf0'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#fff;--bg2:#faf7ff;--tx:#1b1530;--mut:#8a8499;--pur:#7a2cf0;--pink:#e81ee0;--yel:#f8c946;--card:#fff;--line:#ece6f7;--sh:0 12px 40px rgba(122,44,240,.12);box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#130f20;--bg2:#1b1530;--tx:#f4effc;--mut:#a59fb8;--card:#1d1730;--line:#2d2547;--sh:0 12px 40px rgba(0,0,0,.4);color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#130f20;--bg2:#1b1530;--tx:#f4effc;--mut:#a59fb8;--card:#1d1730;--line:#2d2547;--sh:0 12px 40px rgba(0,0,0,.4);color-scheme:dark}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;scroll-padding-top:env(safe-area-inset-top,0px)}
+body{font-family:Poppins,system-ui,sans-serif;background:var(--bg);color:var(--tx);overflow-x:hidden;line-height:1.6}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1100px;margin:auto;padding:0 20px}
+.grad{background:linear-gradient(180deg,rgba(232,30,224,.14),transparent 55%)}
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:color-mix(in srgb,var(--bg) 85%,transparent);backdrop-filter:blur(10px)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:70px;gap:16px}
+.logo{display:flex;align-items:center;gap:8px;font-weight:600}
+.logo i{width:28px;height:24px;border-radius:7px;background:linear-gradient(135deg,var(--pur),var(--pink));display:block}
+.links{display:flex;gap:30px;font-size:12px;font-weight:500}
+.links a{position:relative;padding:4px 0}
+.links a::after{content:"";position:absolute;left:0;bottom:0;height:2px;width:0;background:var(--pur);transition:width .3s}
+.links a:hover::after,.links a.on::after{width:100%}
+.btn{display:inline-block;border:0;border-radius:99px;padding:10px 22px;font:500 12px Poppins;cursor:pointer;background:var(--pur);color:#fff;box-shadow:0 8px 20px rgba(122,44,240,.35);transition:transform .2s,box-shadow .2s}
+.btn:hover{transform:translateY(-2px)}
+.btn.o{background:transparent;color:var(--pur);border:1.5px solid var(--pur);box-shadow:none}
+.nav-r{display:flex;gap:14px;align-items:center;font-size:12px;font-weight:500}
+button:focus-visible,a:focus-visible,input:focus-visible{outline:2px solid var(--pink);outline-offset:3px}
+.page{display:none}.page.on{display:block}
+/* hero */
+.hero{display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:center;padding:50px 0 70px}
+.tag{display:inline-block;background:var(--card);box-shadow:var(--sh);border-radius:99px;padding:6px 16px;font-size:10px;color:var(--pink);font-weight:500}
+h1{font-size:clamp(38px,6vw,56px);line-height:1.15;margin:22px 0 14px;font-weight:600}
+h1 span{color:var(--pink)}
+.hero p{color:var(--mut);font-size:13px;max-width:340px;margin-bottom:24px}
+.hero .btn{margin-right:10px}
+.collage{position:relative;height:380px}
+.ph{position:absolute;border-radius:16px;box-shadow:var(--sh);animation:float 6s ease-in-out infinite}
+.p1{left:0;top:30px;width:44%;height:42%;background:linear-gradient(160deg,#4fc3d9,#1f7a8c 60%,#e8d9a6);animation-delay:0s}
+.p2{right:0;top:0;width:46%;height:28%;background:linear-gradient(160deg,#c93a5d,#f6b7a4);animation-delay:.8s}
+.p3{right:0;top:32%;width:46%;height:56%;background:linear-gradient(180deg,#3a4a7a,#f08a4b 80%);animation-delay:1.6s}
+.p4{left:0;bottom:0;width:44%;height:40%;background:linear-gradient(180deg,#14234f,#f2b84b);animation-delay:2.4s}
+@keyframes float{50%{transform:translateY(-12px)}}
+.plane{position:absolute;font-size:22px;color:var(--pur);animation:fly 7s linear infinite}
+@keyframes fly{0%{left:-5%;top:10%;opacity:0}15%{opacity:1}100%{left:98%;top:55%;opacity:0}}
+.pin{position:absolute;right:30%;bottom:-6px;width:28px;height:28px;border-radius:50%;background:#15a6d8;animation:pulse 2s infinite}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(21,166,216,.6)}100%{box-shadow:0 0 0 18px transparent}}
+/* sections */
+section{padding:50px 0}
+.eyebrow{font-size:12px;letter-spacing:.3em;color:var(--pink);font-weight:600;text-transform:uppercase}
+h2{font-size:clamp(24px,4vw,32px);font-weight:600;line-height:1.25;margin:4px 0 22px}
+.brands{display:flex;justify-content:space-between;flex-wrap:wrap;gap:18px;color:var(--mut);font-weight:600;font-size:18px;padding:30px 0}
+.brands span{opacity:.7;transition:opacity .3s,transform .3s}.brands span:hover{opacity:1;transform:scale(1.08)}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.card{background:var(--card);border-radius:18px;padding:30px 22px;text-align:center;box-shadow:var(--sh);transition:transform .3s}
+.card:hover{transform:translateY(-8px)}
+.card .ic{font-size:40px;margin-bottom:12px;display:block}
+.card h3{font-size:16px;font-weight:500}.card p{font-size:12px;color:var(--mut);margin-top:8px}
+.head{display:flex;justify-content:space-between;align-items:end}
+.arrows{display:flex;gap:10px}
+.ar{width:46px;height:46px;border-radius:50%;border:1.5px solid var(--pur);background:transparent;color:var(--pur);font-size:18px;cursor:pointer;transition:.2s}
+.ar.f,.ar:hover{background:var(--pur);color:#fff}
+.dest{background:var(--card);border-radius:16px;padding:10px;box-shadow:var(--sh);transition:transform .3s}
+.dest:hover{transform:translateY(-6px)}
+.dimg{height:190px;border-radius:12px;position:relative;overflow:hidden;background:linear-gradient(180deg,#5cc0e8 0 45%,#2aa7c9 45% 60%,#f1d79b 60%)}
+.dimg::before{content:"🌴";position:absolute;left:14%;top:6%;font-size:54px;transition:transform .5s}
+.dest:hover .dimg::before{transform:scale(1.25) rotate(-6deg)}
+.dimg b{position:absolute;left:0;top:0;background:var(--pink);color:#fff;font-size:11px;font-weight:500;padding:3px 14px;border-radius:0 0 10px 0}
+.dest h4{font-size:14px;font-weight:600;margin:12px 6px 4px}.dest .pr{color:var(--pur);font-weight:600;margin:0 6px}
+.dest .rt{color:var(--yel);font-size:13px;margin:6px 6px 8px}.dest .rt s{text-decoration:none;color:var(--yel)}
+.dest .btn{width:100%;margin-top:4px}
+.center{text-align:center;margin-top:24px}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+.girl{position:relative;height:380px}
+.blob{position:absolute;inset:40px 0 0 0;background:var(--yel);border-radius:0 50% 50% 0/0 60% 60% 0;animation:morph 8s ease-in-out infinite}
+@keyframes morph{50%{border-radius:0 40% 60% 0/0 50% 70% 0}}
+.girl .em{position:absolute;left:18%;bottom:0;font-size:230px;line-height:1}
+.dot{position:absolute;border-radius:50%;animation:float 5s ease-in-out infinite}
+.stats{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.stat{border:1px solid var(--line);border-radius:14px;padding:20px;text-align:center}
+.stat b{display:block;font-size:24px;color:var(--pur);font-weight:500}.stat small{color:var(--mut);font-size:11px}
+.feat{display:flex;gap:16px;align-items:center;padding:16px;border-radius:16px;transition:.3s}
+.feat:hover,.feat.on{background:var(--card);box-shadow:var(--sh)}
+.fi{width:56px;height:56px;border-radius:14px;display:grid;place-items:center;font-size:24px;flex:none}
+.feat h4{font-size:14px;font-weight:600}.feat p{font-size:11px;color:var(--mut)}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+.pics{position:relative;height:360px}
+.pics div{position:absolute;border-radius:16px;box-shadow:var(--sh)}
+.pics .a{left:0;top:0;width:62%;height:68%;background:linear-gradient(180deg,#2f5fb5,#c98d5c)}
+.pics .b{right:0;bottom:0;width:62%;height:58%;background:linear-gradient(160deg,#1fa59a,#d8b878);border:6px solid var(--card)}
+.tsl{background:var(--card);border-radius:22px;padding:36px 70px;text-align:center;box-shadow:var(--sh);position:relative;max-width:820px;margin:auto;min-height:230px}
+.tsl .ar{position:absolute;top:50%;transform:translateY(-50%)}
+.tsl .l{left:-22px}.tsl .r{right:-22px}
+.av{font-size:44px;width:64px;height:64px;border-radius:50%;background:#e4d5ff;display:grid;place-items:center;margin:0 auto 6px}
+.tx{transition:opacity .35s,transform .35s}.tx.out{opacity:0;transform:translateX(20px)}
+.dots{display:flex;gap:10px;justify-content:center;margin-top:22px}
+.dots i{width:10px;height:10px;border-radius:50%;background:var(--line);transition:.3s}.dots i.on{background:var(--pur);transform:scale(1.2)}
+.news{background:var(--bg2);border-radius:22px;padding:50px 20px;text-align:center}
+.news form{display:flex;max-width:560px;margin:24px auto 0;background:var(--card);border-radius:12px;padding:8px;box-shadow:var(--sh);gap:8px}
+.news input{flex:1;border:0;background:transparent;font:13px Poppins;color:var(--tx);padding:0 12px;min-width:0}
+.news form .btn{border-radius:8px}
+.ok{color:var(--pur);font-size:13px;margin-top:12px;min-height:20px}
+footer{padding:60px 0 20px}
+.fg{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:30px;font-size:12px;color:var(--mut)}
+.fg h5{color:var(--tx);font-size:14px;margin-bottom:12px;font-weight:500}.fg a{display:block;margin-bottom:8px}.fg a:hover{color:var(--pur)}
+.store{display:inline-block;background:#111;color:#fff;border-radius:6px;padding:6px 12px;font-size:11px;margin:10px 8px 0 0}
+/* shop */
+.shophead{padding:50px 0 10px}
+.filters{display:flex;gap:10px;flex-wrap:wrap;margin:10px 0 26px;align-items:center}
+.chip{border:1.5px solid var(--line);background:var(--card);color:var(--tx);border-radius:99px;padding:8px 18px;font:500 12px Poppins;cursor:pointer;transition:.2s}
+.chip.on,.chip:hover{background:var(--pur);color:#fff;border-color:var(--pur)}
+.filters select{margin-left:auto;border:1.5px solid var(--line);background:var(--card);color:var(--tx);border-radius:10px;padding:8px 12px;font:12px Poppins}
+.shopgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:22px}
+.shopgrid .dest{animation:pop .45s both}
+@keyframes pop{from{opacity:0;transform:scale(.92)}}
+.deal{position:absolute;right:10px;top:10px;background:var(--yel);color:#3a2a00;font-size:11px;font-weight:600;padding:3px 10px;border-radius:99px}
+.cart{position:fixed;right:18px;bottom:calc(18px + env(safe-area-inset-bottom,0px));background:var(--pur);color:#fff;border-radius:99px;padding:12px 20px;font-size:13px;font-weight:500;box-shadow:0 10px 30px rgba(122,44,240,.4);z-index:30;transition:transform .2s}
+.cart.bump{transform:scale(1.18)}
+/* reveal */
+.rv{opacity:0;transform:translateY(30px);transition:opacity .8s,transform .8s}.rv.in{opacity:1;transform:none}
+@media(max-width:800px){.links{display:none}.hero,.about,.two,.grid3,.fg{grid-template-columns:1fr}.collage{height:320px}.tsl{padding:30px 20px}.tsl .l{left:-6px}.tsl .r{right:-6px}.girl{height:300px}.grid3.sc{grid-template-columns:1fr}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}}
+
+.skip{position:absolute;left:12px;top:-60px;background:var(--pur);color:#fff;padding:10px 16px;border-radius:8px;z-index:99}.skip:focus{top:10px}
+.menu-btn{display:none;background:none;border:1.5px solid var(--pur);border-radius:10px;width:44px;height:44px;font-size:20px;color:var(--pur);cursor:pointer}
+.links a[aria-current]::after{width:100%}
+.ph{overflow:hidden}.ph img,.dimg img,.pics div img,.gimg{width:100%;height:100%;object-fit:cover;display:block}
+.dimg{background:var(--line)}.dimg b{z-index:2}.dimg::before{content:none}
+.dimg img{transition:transform .6s}.dest:hover .dimg img{transform:scale(1.08)}
+.girl .blob{z-index:0}.gimg{position:absolute;left:14%;bottom:0;width:62%;height:92%;border-radius:200px 200px 16px 16px;z-index:1}
+.pics div{overflow:hidden}
+.av{overflow:hidden;padding:0}.av img{width:100%;height:100%;object-fit:cover}
+.hero p,.shophead p{font-size:15px}.card p,.feat p,.stat small{font-size:13px}.tag{font-size:12px}
+.tripbtn{display:inline-flex;align-items:center;gap:6px;border:1.5px solid var(--pur);color:var(--pur);border-radius:99px;padding:8px 14px;font-size:14px;font-weight:600;text-decoration:none}.tripbtn b{background:var(--pur);color:#fff;border-radius:50%;min-width:20px;height:20px;display:inline-grid;place-items:center;font-size:11px}
+.deals{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:26px}.deal2{position:relative;border-radius:20px;overflow:hidden;min-height:260px;color:#fff;display:flex;align-items:flex-end}.deal2 img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}.deal2::after{content:"";position:absolute;inset:0;background:linear-gradient(transparent 30%,rgba(20,10,40,.78))}.deal2 div{position:relative;z-index:1;padding:20px}.deal2 b{font-size:20px;display:block}.deal2 span{font-size:13px;opacity:.9}
+.steps3{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:26px}.steps3 div{background:var(--card);border-radius:18px;padding:24px;box-shadow:var(--sh)}.steps3 i{font-style:normal;display:inline-grid;place-items:center;width:38px;height:38px;border-radius:50%;background:var(--pur);color:#fff;font-weight:600;margin-bottom:12px}.steps3 h3{font-size:16px}.steps3 p{font-size:13px;color:var(--mut);margin-top:6px}
+.strip4{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:26px}.strip4 div{aspect-ratio:3/4;border-radius:18px;overflow:hidden}.strip4 img{width:100%;height:100%;object-fit:cover;display:block}.strip4 div:nth-child(even){transform:translateY(22px)}
+.pagehero{padding:50px 0 10px}.pagehero h1{font-size:clamp(30px,5vw,44px);margin-top:6px}
+.cf{display:grid;grid-template-columns:1fr 1fr;gap:40px;padding:30px 0 70px}.cf ul{list-style:none;padding:0;margin-top:14px}.cf li{padding:14px 0;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;font-size:14px}
+.cf form{background:var(--card);border-radius:18px;padding:26px;box-shadow:var(--sh);display:grid;gap:14px}.cf label{display:grid;gap:6px;font-size:13px;font-weight:500}.cf input,.cf select,.cf textarea{border:1.5px solid var(--line);background:var(--bg);color:var(--tx);border-radius:10px;padding:12px;font:14px Poppins;min-height:46px}.cf textarea{min-height:110px}
+.faq details{border-bottom:1px solid var(--line);padding:14px 0}.faq summary{cursor:pointer;font-weight:500;min-height:32px}.faq p{color:var(--mut);font-size:14px;margin-top:8px}
+footer{border-top:1px solid var(--line)}
+.fine{text-align:center;font-size:12px;color:var(--mut);padding:24px 20px 80px}.fine a{text-decoration:underline}
+@media(max-width:800px){.menu-btn{display:block}.links{position:absolute;top:70px;left:0;right:0;background:var(--bg);flex-direction:column;gap:0;padding:6px 20px 16px;border-bottom:1px solid var(--line);display:none}.links.open{display:flex}.links a{padding:14px 0;font-size:14px}.nav-r .lg{display:none}.cf{grid-template-columns:1fr}.news form{flex-direction:column}.head{flex-direction:column;align-items:flex-start;gap:12px}.filters select{margin-left:0;width:100%}.hero p{max-width:none}.gimg{left:10%;width:70%}}
+@media(max-width:800px){.deals,.steps3{grid-template-columns:1fr}.strip4{grid-template-columns:1fr 1fr}.strip4 div:nth-child(even){transform:none}.tripbtn{padding:7px 10px}}
+@media(max-width:520px){.fg{grid-template-columns:1fr 1fr}.stats{grid-template-columns:1fr 1fr}.brands{justify-content:center}}
+</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"TravelAgency","name":"Travelo","description":"Flights, hotels and holiday packages across Southeast Asia."}</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<nav aria-label="Main"><div class="wrap"><a class="logo" href="index.html"><i></i>Travelo</a><div class="links" id="lk"><a href="index.html" aria-current="page">Home</a><a href="destinations.html">Destinations</a><a href="about.html">About</a><a href="contact.html">Contact</a></div><div class="nav-r"><a class="lg" href="contact.html">Support</a><a class="btn" href="destinations.html">Book now</a><a class="tripbtn" href="destinations.html" aria-label="Your trip">🧳 <b id="tc">0</b></a><button class="menu-btn" aria-label="Menu" aria-expanded="false" aria-controls="lk">☰</button></div></div></nav>
+<main id="main">
+<div class="grad"><div class="wrap hero"><div><span class="tag">Explore the world!</span><h1>From<br>Southeast Asia<br><span>to the World.</span></h1><p>Stay updated with travel tips, recommendations and the latest promos.</p><a class="btn" href="destinations.html">Get Started</a><a class="btn o" href="about.html">How it works</a></div><div class="collage"><div class="plane" aria-hidden="true">✈</div><div class="ph p1"><img src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&fit=crop&q=70&w=500&h=360" data-pool="travel" alt="Tropical beach with clear water" width="500" height="360" fetchpriority="high"></div><div class="ph p2"><img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&q=70&w=500&h=260" data-pool="travel" alt="City skyline at dusk" width="500" height="260" loading="lazy" decoding="async"></div><div class="ph p3"><img src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&q=70&w=500&h=520" data-pool="travel" alt="Temple at sunset" width="500" height="520" loading="lazy" decoding="async"></div><div class="ph p4"><img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&q=70&w=500&h=360" data-pool="travel" alt="Island coast from above" width="500" height="360" loading="lazy" decoding="async"></div><div class="pin"></div></div></div></div>
+<div class="wrap brands rv" aria-label="Booking partners"><span>traveloka</span><span>tiket.com</span><span>Booking.com</span><span>tripadvisor</span><span>airbnb</span></div>
+<section class="wrap rv"><div class="eyebrow">Services</div><h2>Why book using Travelo</h2><div class="grid3"><div class="card"><span class="ic" aria-hidden="true">🧳</span><h3>All You Need</h3><p>Flights, stays and sights from one complete set of products.</p></div><div class="card"><span class="ic" aria-hidden="true">📘</span><h3>Flexible Booking</h3><p>Change dates without stress, with clear refund rules.</p></div><div class="card"><span class="ic" aria-hidden="true">💳</span><h3>Secure Payment</h3><p>Pay with cards, wallets or bank transfer, all encrypted.</p></div></div></section>
+<section class="wrap rv"><div class="head"><div><div class="eyebrow">Top Destination</div><h2>Explore top destinations</h2></div><div class="arrows"><button class="ar" id="dprev" aria-label="Previous destination">‹</button><button class="ar f" id="dnext" aria-label="Next destination">›</button></div></div><div class="grid3" id="dgrid"></div><div class="center"><a class="btn o" href="destinations.html">See all</a></div></section>
+<section class="wrap about rv"><div class="girl"><div class="blob"></div><img class="gimg" src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&q=70&w=520&h=560" data-pool="portrait" alt="Happy traveller with a backpack" width="520" height="560" loading="lazy" decoding="async"><span class="dot" style="width:40px;height:40px;background:#8a2be2;left:50%;top:10px"></span><span class="dot" style="width:22px;height:22px;background:#2ec4b6;left:2%;top:60px;animation-delay:1s"></span></div><div><div class="eyebrow">Travel Point</div><h2>We help you find your dream destination</h2><p style="font-size:14px;color:var(--mut);margin-bottom:20px">Travelo is here to help you find your dream holiday. Pick where you want to go, choose your dates and book in minutes.</p><div class="stats"><div class="stat"><b data-n="200" data-s="+">0</b><small>Holiday packages</small></div><div class="stat"><b data-n="450">0</b><small>Partner hotels</small></div><div class="stat"><b data-n="10">0</b><small>Premium airlines</small></div><div class="stat"><b data-n="12" data-s="k+">0</b><small>Happy customers</small></div></div></div></section>
+<section class="wrap rv" id="support"><div style="text-align:center"><div class="eyebrow">Testimonials</div><h2>Trusted by travellers</h2></div><div class="tsl"><button class="ar l" id="tprev" aria-label="Previous review">‹</button><button class="ar f r" id="tnext" aria-label="Next review">›</button><div class="tx" id="tx" aria-live="polite"></div></div><div class="dots" id="dots" aria-hidden="true"></div></section>
+<section class="wrap rv"><div class="eyebrow">Hot deals</div><h2>Limited-time offers</h2><div class="deals"><a class="deal2" href="destinations.html"><img src="https://images.unsplash.com/photo-1506929562872-bb421503ef21?auto=format&fit=crop&q=70&w=600&h=400" data-pool="travel" alt="Bali beach villa" width="600" height="400" loading="lazy" decoding="async"><div><b>Bali 5 nights</b><span>Flights + stay from $499</span></div></a><a class="deal2" href="destinations.html"><img src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&q=70&w=600&h=400" data-pool="travel" alt="Kyoto street in autumn" width="600" height="400" loading="lazy" decoding="async"><div><b>Kyoto culture week</b><span>Hotel + rail pass from $720</span></div></a><a class="deal2" href="destinations.html"><img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&q=70&w=600&h=400" data-pool="travel" alt="Island boat tour" width="600" height="400" loading="lazy" decoding="async"><div><b>El Nido island hop</b><span>3 day tour from $210</span></div></a></div></section>
+<section class="wrap rv"><div class="eyebrow">How it works</div><h2>Book in three steps</h2><div class="steps3"><div><i>1</i><h3>Choose a destination</h3><p>Browse beaches and cities and compare prices.</p></div><div><i>2</i><h3>Pick your dates</h3><p>Flexible dates with clear refund rules.</p></div><div><i>3</i><h3>Pay and fly</h3><p>Secure payment and instant confirmation.</p></div></div></section>
+<section class="wrap rv"><div class="eyebrow">Travel diary</div><h2>Moments from our travellers</h2><div class="strip4"><div><img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&q=70&w=480&h=640" data-pool="travel" alt="Traveller photo 1" width="480" height="640" loading="lazy" decoding="async"></div><div><img src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&fit=crop&q=70&w=480&h=640" data-pool="travel" alt="Traveller photo 2" width="480" height="640" loading="lazy" decoding="async"></div><div><img src="https://images.unsplash.com/photo-1528181304800-259b08848526?auto=format&fit=crop&q=70&w=480&h=640" data-pool="travel" alt="Traveller photo 3" width="480" height="640" loading="lazy" decoding="async"></div><div><img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&q=70&w=480&h=640" data-pool="travel" alt="Traveller photo 4" width="480" height="640" loading="lazy" decoding="async"></div></div><div style="height:30px"></div></section><section class="wrap rv"><div class="news"><div class="eyebrow">Subscribe to our newsletter</div><h2>Prepare yourself and let’s explore the beautiful world</h2><form id="nf"><input type="email" required placeholder="Your email" aria-label="Email" autocomplete="email"><button class="btn">Subscribe</button></form><div class="ok" id="ok" role="status"></div></div></section><div id="dstore" hidden><article class="dest"><div class="dimg"><b>Indonesia</b><img src="https://images.unsplash.com/photo-1506929562872-bb421503ef21?auto=format&fit=crop&q=70&w=600&h=380" data-pool="travel" alt="Pandawa Beach, Bali Island" width="600" height="380" loading="lazy" decoding="async"></div><h3 style="font-size:14px;font-weight:600;margin:12px 6px 4px">Pandawa Beach, Bali Island</h3><div class="pr">$30.99</div><div class="rt" aria-label="Rated 4.9 out of 5">4.9 <s>★</s></div><a class="btn" style="display:block;text-align:center" href="destinations.html">View deal</a></article><article class="dest"><div class="dimg"><b>Bangkok</b><img src="https://images.unsplash.com/photo-1506929562872-bb421503ef21?auto=format&fit=crop&q=70&w=600&h=380" data-pool="travel" alt="Wat Arun Riverside, Thailand" width="600" height="380" loading="lazy" decoding="async"></div><h3 style="font-size:14px;font-weight:600;margin:12px 6px 4px">Wat Arun Riverside, Thailand</h3><div class="pr">$42.50</div><div class="rt" aria-label="Rated 4.9 out of 5">4.9 <s>★</s></div><a class="btn" style="display:block;text-align:center" href="destinations.html">View deal</a></article><article class="dest"><div class="dimg"><b>Japan</b><img src="https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&q=70&w=600&h=380" data-pool="travel" alt="Fushimi Inari, Kyoto" width="600" height="380" loading="lazy" decoding="async"></div><h3 style="font-size:14px;font-weight:600;margin:12px 6px 4px">Fushimi Inari, Kyoto</h3><div class="pr">$58.00</div><div class="rt" aria-label="Rated 4.9 out of 5">4.9 <s>★</s></div><a class="btn" style="display:block;text-align:center" href="destinations.html">View deal</a></article><article class="dest"><div class="dimg"><b>Vietnam</b><img src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&fit=crop&q=70&w=600&h=380" data-pool="travel" alt="Ha Long Bay Cruise" width="600" height="380" loading="lazy" decoding="async"></div><h3 style="font-size:14px;font-weight:600;margin:12px 6px 4px">Ha Long Bay Cruise</h3><div class="pr">$36.40</div><div class="rt" aria-label="Rated 4.9 out of 5">4.9 <s>★</s></div><a class="btn" style="display:block;text-align:center" href="destinations.html">View deal</a></article><article class="dest"><div class="dimg"><b>Malaysia</b><img src="https://images.unsplash.com/photo-1506929562872-bb421503ef21?auto=format&fit=crop&q=70&w=600&h=380" data-pool="travel" alt="Petronas Towers Stay" width="600" height="380" loading="lazy" decoding="async"></div><h3 style="font-size:14px;font-weight:600;margin:12px 6px 4px">Petronas Towers Stay</h3><div class="pr">$44.90</div><div class="rt" aria-label="Rated 4.9 out of 5">4.9 <s>★</s></div><a class="btn" style="display:block;text-align:center" href="destinations.html">View deal</a></article><article class="dest"><div class="dimg"><b>Philippines</b><img src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&fit=crop&q=70&w=600&h=380" data-pool="travel" alt="El Nido Island Hop" width="600" height="380" loading="lazy" decoding="async"></div><h3 style="font-size:14px;font-weight:600;margin:12px 6px 4px">El Nido Island Hop</h3><div class="pr">$39.20</div><div class="rt" aria-label="Rated 4.9 out of 5">4.9 <s>★</s></div><a class="btn" style="display:block;text-align:center" href="destinations.html">View deal</a></article><article class="dest"><div class="dimg"><b>Singapore</b><img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&q=70&w=600&h=380" data-pool="travel" alt="Marina Bay Weekend" width="600" height="380" loading="lazy" decoding="async"></div><h3 style="font-size:14px;font-weight:600;margin:12px 6px 4px">Marina Bay Weekend</h3><div class="pr">$65.00</div><div class="rt" aria-label="Rated 4.9 out of 5">4.9 <s>★</s></div><a class="btn" style="display:block;text-align:center" href="destinations.html">View deal</a></article><article class="dest"><div class="dimg"><b>Thailand</b><img src="https://images.unsplash.com/photo-1506929562872-bb421503ef21?auto=format&fit=crop&q=70&w=600&h=380" data-pool="travel" alt="Phi Phi Islands Tour" width="600" height="380" loading="lazy" decoding="async"></div><h3 style="font-size:14px;font-weight:600;margin:12px 6px 4px">Phi Phi Islands Tour</h3><div class="pr">$33.70</div><div class="rt" aria-label="Rated 4.9 out of 5">4.9 <s>★</s></div><a class="btn" style="display:block;text-align:center" href="destinations.html">View deal</a></article></div>
+</main>
+<footer><div class="wrap"><div class="fg"><div><a class="logo" href="index.html"><i></i>Travelo</a><p style="margin:14px 0;max-width:260px">Travelo is Southeast Asia’s travel and lifestyle app. Discover and book flights, stays and sights in one place.</p></div><div><h5>Explore</h5><a href="index.html">Home</a><a href="destinations.html">Destinations</a><a href="about.html">About</a><a href="contact.html">Contact</a></div><div><h5>Products</h5><a href="destinations.html">Flights</a><a href="destinations.html">Hotels</a><a href="destinations.html">Holiday packages</a></div><div><h5>Contact</h5><a href="contact.html">Help centre</a><a href="https://wa.me/910000000000" target="_blank" rel="noopener">WhatsApp</a><a href="https://instagram.com/travelo" target="_blank" rel="noopener">Instagram</a></div></div></div><p class="fine">© 2026 Travelo · Sample website by <a href="../../index.html">Calling Card</a> · <a href="../../samples.html">See all samples</a></p></footer>
+
+<script>
+var D=[["Indonesia","Pandawa Beach, Bali Island",30.99,"Beach","bali beach"],["Bangkok","Wat Arun Riverside, Thailand",42.5,"City","bangkok temple"],["Japan","Fushimi Inari, Kyoto",58,"City","kyoto shrine"],["Vietnam","Ha Long Bay Cruise",36.4,"Beach","halong bay"],["Malaysia","Petronas Towers Stay",44.9,"City","kuala lumpur"],["Philippines","El Nido Island Hop",39.2,"Beach","el nido"],["Singapore","Marina Bay Weekend",65,"City","singapore bay"],["Thailand","Phi Phi Islands Tour",33.7,"Beach","phi phi islands"]],T=[["Irfan Rahmat","Travel Enthusiast","I love Travelo, this is the best place to buy tickets and find your dream holiday."],["Maya Putri","Digital Nomad","Booking flights and stays in one app saved me hours on every trip."],["Kenji Sato","Photographer","Secure payment and flexible dates made planning stress free."]];
+var $=function(s){return document.querySelector(s)};
+var mb=$(".menu-btn"),lk=$(".links");mb.addEventListener("click",function(){var o=lk.classList.toggle("open");mb.setAttribute("aria-expanded",o)});lk.addEventListener("click",function(e){if(e.target.closest("a"))lk.classList.remove("open")});
+function ph(i){if(i.dataset.f)return;i.dataset.f=1;i.src="data:image/svg+xml,"+encodeURIComponent("<svg xmlns='http://www.w3.org/2000/svg' width='600' height='400'><defs><linearGradient id='g' x1='0' y1='0' x2='0' y2='1'><stop offset='0' stop-color='#5cc0e8'/><stop offset='1' stop-color='#f1d79b'/></linearGradient></defs><rect width='100%' height='100%' fill='url(#g)'/><text x='50%' y='58%' font-size='110' text-anchor='middle' fill='#fff' fill-opacity='.8'>✈</text></svg>")}
+document.addEventListener("error",function(e){if(e.target.tagName==="IMG"&&e.target.dataset.pool)ph(e.target)},true);document.querySelectorAll("img[data-pool]").forEach(function(i){if(i.complete&&!i.naturalWidth)ph(i)});
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add("in");e.target.querySelectorAll("[data-n]").forEach(count);io.unobserve(e.target)}})},{threshold:.12});document.querySelectorAll(".rv").forEach(function(e){io.observe(e)});
+function count(el){if(el.done)return;el.done=1;var n=+el.dataset.n,s=el.dataset.s||"",t0=performance.now();(function f(t){var k=Math.min((t-t0)/1400,1);el.textContent=Math.round(n*(1-Math.pow(1-k,3)))+(k==1?s:"");if(k<1)requestAnimationFrame(f)})(t0)}
+var tcb=$("#tc");try{var tv=JSON.parse(localStorage.getItem("travelo_trip")||"{}");if(tcb)tcb.textContent=tv.n||0}catch(x){}
+var nf=$("#nf");if(nf)nf.onsubmit=function(e){e.preventDefault();$("#ok").textContent="Subscribed. Check your inbox for travel tips.";nf.reset()};
+document.querySelectorAll("form[data-wa]").forEach(function(f){f.addEventListener("submit",function(e){e.preventDefault();var t=["Trip enquiry - Travelo"];f.querySelectorAll("input,select,textarea").forEach(function(i){if(i.value&&i.name)t.push(i.name+": "+i.value)});window.open("https://wa.me/910000000000?text="+encodeURIComponent(t.join("\n")),"_blank")})});
+if($("#dgrid")){var off=0,card=function(i){return $("#tpl"+i).innerHTML};var dr=function(){var all=[].slice.call(document.querySelectorAll("#dstore article"));$("#dgrid").innerHTML=[0,1,2].map(function(i){return all[(off+i)%all.length].outerHTML}).join("")};$("#dnext").onclick=function(){off=(off+1)%8;dr()};$("#dprev").onclick=function(){off=(off+7)%8;dr()};dr()}
+if($("#tx")){var ti=1,tx=$("#tx"),tm;var tr=function(){var t=T[ti];tx.classList.add("out");setTimeout(function(){tx.innerHTML='<b style="font-weight:500">'+t[0]+'</b><div style="font-size:12px;color:var(--mut)">'+t[1]+'</div><div style="color:var(--yel);margin:6px 0" aria-label="5 stars">★★★★★</div><p style="font-size:14px;color:var(--mut)">'+t[2]+'</p>';tx.classList.remove("out")},300);$("#dots").innerHTML=T.map(function(_,i){return'<i class="'+(i==ti?"on":"")+'"></i>'}).join("")};var step=function(d){ti=(ti+d+T.length)%T.length;tr();clearInterval(tm);tm=setInterval(function(){step(1)},7000)};$("#tnext").onclick=function(){step(1)};$("#tprev").onclick=function(){step(-1)};tr();tm=setInterval(function(){step(1)},7000)}
+if($("#sg")){var cat="All",sort="",cats=["All","Beach","City"];$("#chips").innerHTML=cats.map(function(c){return'<button class="chip'+(c==="All"?" on":"")+'" aria-pressed="'+(c==="All")+'">'+c+"</button>"}).join("")+'<select id="so" aria-label="Sort"><option value="">Sort by</option><option value="a">Price: low to high</option><option value="d">Price: high to low</option></select>';
+var cards=[].slice.call(document.querySelectorAll("#sstore article"));cards.forEach(function(c,i){c.dataset.cat=D[i][3];c.dataset.p=D[i][2]});
+var sr=function(){var l=cards.filter(function(c){return cat==="All"||c.dataset.cat===cat});if(sort==="a")l.sort(function(a,b){return a.dataset.p-b.dataset.p});if(sort==="d")l.sort(function(a,b){return b.dataset.p-a.dataset.p});$("#sg").innerHTML="";l.forEach(function(c){$("#sg").appendChild(c)});$("#none").hidden=l.length>0};
+$("#chips").addEventListener("click",function(e){if(e.target.classList.contains("chip")){cat=e.target.textContent;document.querySelectorAll("#chips .chip").forEach(function(c){c.classList.toggle("on",c===e.target);c.setAttribute("aria-pressed",c===e.target)});sr()}});$("#so").onchange=function(e){sort=e.target.value;sr()};sr();
+var n=0,sum=0;try{var sv=JSON.parse(localStorage.getItem("travelo_trip")||"{}");n=sv.n||0;sum=sv.s||0}catch(x){}
+var ct=$("#cart"),paint=function(){ct.textContent="🧳 Trip: "+n+" item"+(n==1?"":"s")+" · $"+sum.toFixed(2)};paint();
+$("#sg").addEventListener("click",function(e){var p=e.target.dataset.add;if(!p)return;n++;sum+=+p;paint();try{localStorage.setItem("travelo_trip",JSON.stringify({n:n,s:sum}))}catch(x){}if(tcb)tcb.textContent=n;ct.classList.add("bump");setTimeout(function(){ct.classList.remove("bump")},200);e.target.textContent="Added ✓"})}
+</script>
+</body></html>
